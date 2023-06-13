@@ -15,8 +15,8 @@ const { Drivers } = require('../models')
 
     const getDriversById  = async (req, res) => {
         try{
-            const {_id} = req.params
-            const driverId = await Drivers.findById(_id)
+            const {id} = req.params
+            const driverId = await Drivers.findById(id)
             if (!driverId) throw Error('driver not found!')
             res.json(driverId)
         } catch (e){

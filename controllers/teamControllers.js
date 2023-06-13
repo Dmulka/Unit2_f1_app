@@ -17,8 +17,8 @@ const { Teams } = require('../models')
     const getTeamsById  = async (req, res) => {
         try{
             const {id} = req.params
-            const teamId = await Teams.findById(_id)
-            if (!movie) throw Error('team not found!')
+            const teamId = await Teams.findById(id)
+            if (!teamId) throw Error('team not found!')
             res.json(teamId)
         } catch (e){
             console.log(e)

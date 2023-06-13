@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    color: white;
+    margin-bottom: 200px
+}
+
+#team-btns, img {
+    width: 300px;
+    height: 150px;
+}
+
+.rb-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    border-radius: 10px;
+    border:1px solid white;
+    background-color: black;
+    z-index: 10;
+    width: 500px;
+    max-width: 80%;
+
+}
+.rb-modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.rb-modal .content {
+    padding; 10px 15px s
+}
+
+
+
