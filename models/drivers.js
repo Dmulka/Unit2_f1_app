@@ -6,6 +6,7 @@ const driverSchema = new Schema (
         current_ranking: {type: Number, required: true},
         points: {type: String, required: true},
         img: {type: String, required: true},
+        team: {type: Schema.Types.ObjectId, ref: "Teams"}
 
     },
     {

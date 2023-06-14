@@ -3,18 +3,29 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+
 
 }
 
 h1{
     color: white;
-    margin-bottom: 200px
+    margin: 200px;
+
+}
+
+#team-btns {
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 50px;
 }
 
 #team-btns, img {
     width: 300px;
     height: 150px;
+   
 }
 
 .rb-modal {
@@ -40,7 +51,7 @@ h1{
 }
 
 .rb-modal .content {
-    padding; 10px 15px s
+    padding: 10px 15px;
 }
 
 
