@@ -3,6 +3,8 @@ const controller = require('../controllers/teamControllers.js')
 
 Router.get('/', controller.getAllTeams)
 Router.get('/:id', controller.getTeamsById)
-
+Router.put('/', controller.createTeam)
+Router.put('/:id', controller.updateTeam)
+Router.delete('/:id', controller.deleteTeam)
 
 module.exports = Router 
