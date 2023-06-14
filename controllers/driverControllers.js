@@ -1,17 +1,35 @@
-const db = require('../db')
+const getCRUD = require('./controllers/crudControllers')
 const { Drivers } = require('../models')
 
 
-    const getAllDrivers = async (req, res) => {
-        const everyDriver = await Drivers.find()
-        res.json(everyDriver)
-    }
+////create/////
 
-    const getDriversDecendin = async (req, res) => {
-        const hightLow = await Drivers.find().sort({current_ranking: 1})
-        console.log(hightLow)
-        res.json(hightLow)
-    }
+const createDriver = async (req, res) => {
+    getCRUD.createObject(req, res, Drivers);
+};
+
+////update/////
+
+const updateDriver = async (req, res) => {
+    getCRUD.updateObjectByID(req, res, Drivers);
+};
+
+/////// Delete //////
+const deleteDriver = async (req, res) => {
+    someCRUD.deleteObjectByID(req, res, Drivers);
+};
+
+
+const getAllDrivers = async (req, res) => {
+    const everyDriver = await Drivers.find()
+     res.json(everyDriver)
+ }
+
+ const getDriversDecendin = async (req, res) => {
+    const hightLow = await Drivers.find().sort({current_ranking: 1})
+    console.log(hightLow)
+    res.json(hightLow)
+}
 
     const getDriversById  = async (req, res) => {
         try{
@@ -29,6 +47,8 @@ const { Drivers } = require('../models')
 module.exports = {
     getAllDrivers,
     getDriversDecendin,
-    getDriversById
-
+    getDriversById,
+    createDriver,
+    updateDriver,
+    deleteDriver,
 }
