@@ -11,19 +11,23 @@
 </head>
 <body>
     <head>
-     <h1>F1 App</h1>
+     <div class="top-bar">
+        <span id="admin-login-btn">ADMIN LOGIN</span>
+    </div>
+
+     
     </head>
 
   <main>
+    <h1>F1 App</h1>
+
     <div id="team-btns">
-        <button id="Red-Bull-Btn"><img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Oracle_Red_Bull_Racing_logo.png"></button>
+        <button class='modaBtns'id="Red-Bull-Btn"><img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Oracle_Red_Bull_Racing_logo.png"></button>
             <div class="modal" id="rb-modal">
-                <div class="'rb-modal-header">
+                <div class="'modal-header">
                     <button button class="clsoe-button">&times;</button>
                 </div>
-                <div class="content">
-                    <div id="apiData">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum cumque est cum facere, eligendi nisi exercitationem natus, laboriosam consectetur sapiente, obcaecati provident reiciendis adipisci iste itaque enim in sequi.</div>
-                </div>
+                <div class="content"></div>
                 <div id="overlay"> </div>
             </div>
 
@@ -32,11 +36,58 @@
         <button id="Astin-Martin-Btn"><img src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/aston%20martin.jpg"></button>
 
         <button id="Ferrari-Btn"><img src="https://media.formula1.com/content/dam/fom-website/teams/Ferrari/logo-ferrari-18%20.jpg"></button>
-        
+
         <button id="Alpine-Btn"><img src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/team%20logos/alpine.jpg"></button>
     </div>
+
+    <!-- <div class="contact-container">
+        <h2>Contact us below. Our average response time is 2 business days.</h2>
+        <div class="input-div">
+            <input id="input-name" placeholder="Name">
+            <br>
+            <input id="input-email" placeholder="Email Address">
+            <br>
+            <textarea id="input-message" name="input-message" rows="7" cols="60" placeholder="Enter your message here..."></textarea>
+            <br>
+        </div>
+        <button type="submit" id="contact-submit-btn">Submit</button>
+        <p id="please-fill" style="color: red; display: none;">Please fill out all required fields.</p>
+    </div>
+
+    <div class="admin-container">
+        <form class="login-form" onsubmit="return false">
+            <label>Admin Login</label>
+            <br>
+            <input type="text" id="admin-username-input" placeholder="Username">
+            <input type="password" id="admin-password-input" placeholder="Password">
+            <button id="admin-login-submit">Submit</button>
+            <p id="invalid-login" style="display: none; color: red;">Invalid login credentials.</p>
+        </form>
+        <div class="admin-homepage">
+            <h2>ADMIN CONTROL PANEL</h2>
+            <ul>
+                <li id="nav-manage-bikes">MANAGE BIKES</li>
+                <li id="nav-manage-accessories">MANAGE ACCESSORIES</li>
+                <li id="nav-read-comments">READ MESSAGES</li>
+            </ul>
+            <div class="admin-content">
+
+            </div>
+        </div>
+    </div>
+</div> -->
+
  </main>
   <footer>
+
+    <div class=lower-bar"></div>
+        <div class="navbar">
+            <ul>
+                <li class="nav-button" id="nav-contact-btn">Comment</li>
+            </ul>
+        </div>
+    </div>
+
   </footer>
 
 </body>
