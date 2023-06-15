@@ -32,7 +32,7 @@ margin: 50px;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate( -50%, -50%);
+    transform: translate( -50%, -50%) scale(0);
     border-radius: 10px;
     border:1px solid white;
     background-color: black;
@@ -52,7 +52,24 @@ margin: 50px;
 
 .rb-modal .content {
     padding: 10px 15px;
+    color: white;
+}
+.rb-modal.active {
+    transform: translate(-50%, -50%) scale(1);
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.301);
+    pointer-events: none;
+}
 
+#overlay.active {
+    opacity: 1;
+    pointer-events: all 
+}
 

@@ -2,7 +2,7 @@ const Router = require('express').Router()
 const controller = require('../controllers/teamControllers.js')
 
 Router.get('/', controller.getAllTeams)
-Router.get('/:id', controller.getTeamsById)
+Router.get('/:name', controller.getTeamsByName)
 Router.put('/', controller.createTeam)
 Router.put('/:id', controller.updateTeam)
 Router.delete('/:id', controller.deleteTeam)

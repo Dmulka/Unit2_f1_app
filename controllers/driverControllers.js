@@ -1,11 +1,11 @@
-const getCRUD = require('./controllers/crudControllers')
+const getCRUD = require('../controllers/crudControllers')
 const { Drivers } = require('../models')
 
 
 ////create/////
 
 const createDriver = async (req, res) => {
-    getCRUD.createObject(req, res, Drivers);
+    getCRUD.createObject(req, res, Drivers);1
 };
 
 ////update/////
@@ -31,10 +31,11 @@ const getAllDrivers = async (req, res) => {
     res.json(hightLow)
 }
 
-    const getDriversById  = async (req, res) => {
+    const getDriversByName  = async (req, res) => {
         try{
-            const {id} = req.params
-            const driverId = await Drivers.findById(id)
+            const {name} = req.params
+            console.log(name)
+            const driverId = await Drivers.findOne({name})
             if (!driverId) throw Error('driver not found!')
             res.json(driverId)
         } catch (e){
@@ -43,11 +44,10 @@ const getAllDrivers = async (req, res) => {
         }
     }
 
-
 module.exports = {
     getAllDrivers,
     getDriversDecendin,
-    getDriversById,
+    getDriversByName,
     createDriver,
     updateDriver,
     deleteDriver,

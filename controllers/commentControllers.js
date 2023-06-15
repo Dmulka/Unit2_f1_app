@@ -1,4 +1,4 @@
-const getCRUD = require('./controllers/crudControllers')
+const getCRUD = require('./crudControllers')
 const { Comment } = require('../models')
 
 const getComments = async (req, res) => {

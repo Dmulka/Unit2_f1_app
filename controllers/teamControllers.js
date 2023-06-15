@@ -1,4 +1,4 @@
-const gertCRUD = require('./controllers/crudControllers')
+const gertCRUD = require('../controllers/crudControllers')
 const { Teams } = require('../models')
 
 
@@ -31,10 +31,10 @@ const getTeamsDecending = async (req, res) => {
     res.json(hightLow)
 }
 
-    const getTeamsById  = async (req, res) => {
+    const getTeamsByName  = async (req, res) => {
         try{
-            const {id} = req.params
-            const teamId = await Teams.findById(id)
+            const {name}= req.params
+            const teamId = await Teams.findOne({name})
             if (!teamId) throw Error('team not found!')
             res.json(teamId)
         } catch (e){
@@ -47,7 +47,7 @@ const getTeamsDecending = async (req, res) => {
 module.exports = {
     getAllTeams,
     getTeamsDecending,
-    getTeamsById,
+    getTeamsByName,
     createTeam,
     updateTeam,
     deleteTeam

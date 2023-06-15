@@ -13,13 +13,6 @@ app.listen(PORT, () => {
     console.log(`Express server listening on port ${PORT}`)
 })
 
-// app.get('/', async (req, res) => {
-//     const teams = await Drivers.find()
-//     res.json(teams)
-
-// })
-
-
 app.use('/', AppRouter)
 
 

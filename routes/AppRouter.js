@@ -2,7 +2,7 @@ const Router = require('express').Router()
 
 const DriverRouter = require('./driverRouter')
 const TeamRouter = require('./teamRouter')
-const CommentRouter = require('/.commentRouter')
+const CommentRouter = require('./commentRouter')
 
 
 
