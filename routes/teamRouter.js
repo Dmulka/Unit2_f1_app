@@ -4,7 +4,7 @@ const controller = require('../controllers/teamControllers.js')
 Router.get('/', controller.getAllTeams)
 Router.get('/:name', controller.getTeamsByName)
 Router.put('/', controller.createTeam)
-Router.put('/:id', controller.updateTeam)
+Router.post('/:id', controller.updateTeam)
 Router.delete('/:id', controller.deleteTeam)
 
 module.exports = Router 

@@ -5,7 +5,7 @@ const { Drivers } = require('../models')
 ////create/////
 
 const createDriver = async (req, res) => {
-    getCRUD.createObject(req, res, Drivers);1
+    getCRUD.createObject(req, res, Drivers);
 };
 
 ////update/////

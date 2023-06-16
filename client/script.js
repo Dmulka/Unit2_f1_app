@@ -13,6 +13,7 @@ redBullBtn.addEventListener('click', async  () => {
     let response = await axios.get("http://localhost:3001/teams/Red%20Bull")
     console.log(response)
     let modalContent = document.querySelector(".content")
+    modalContent.innerHTML= ""
     let rbpoints = response.data.points
     modalContent.innerHTML +=rbpoints
     let rbRandk = response.data.current_rank
@@ -30,6 +31,7 @@ mercBtn.addEventListener('click', async  () => {
     let response = await axios.get("http://localhost:3001/teams/Mercedes")
     console.log(response)
     let modalContent = document.querySelector(".content")
+    modalContent.innerHTML= ""
     let points = response.data.points
     modalContent.innerHTML +=points
     let rank = response.data.current_rank
@@ -47,6 +49,7 @@ astinBtn.addEventListener('click', async  () => {
     let response = await axios.get("http://localhost:3001/teams/Astin%20Martin")
     console.log(response)
     let modalContent = document.querySelector(".content")
+    modalContent.innerHTML= ""
     let points = response.data.points
     modalContent.innerHTML +=points
     let rank = response.data.current_rank
@@ -64,6 +67,7 @@ fezzerBtn.addEventListener('click', async  () => {
     let response = await axios.get("http://localhost:3001/teams/Ferrari")
     console.log(response)
     let modalContent = document.querySelector(".content")
+    modalContent.innerHTML= ""
     let points = response.data.points
     modalContent.innerHTML +=points
     let rank = response.data.current_rank
@@ -81,6 +85,7 @@ alpine.addEventListener('click', async  () => {
     let response = await axios.get("http://localhost:3001/teams/Alpine")
     console.log(response)
     let modalContent = document.querySelector(".content")
+    modalContent.innerHTML= ""
     let points = response.data.points
     modalContent.innerHTML +=points
     let rank = response.data.current_rank
@@ -132,6 +137,25 @@ const overlay = document.getElementById('overlay')
     modal.classList.remove('active')
     overlay.classList.remove('active')
   }
+
+
+//////comment form logic///////
+
+
+
+
+
+
+document.querySelector("#comment-btn").addEventListener('click', function(){
+    document.querySelector('.popup').classList('active')
+})
+
+document.querySelector(".popup .close-btn").addEventListener('click',function(){
+    document.querySelector(".popup").classList.remove("active")
+})
+
+
+
 
 
 

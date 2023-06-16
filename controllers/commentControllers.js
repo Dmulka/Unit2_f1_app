@@ -24,7 +24,7 @@ const getCommentById = async (req, res) => {
 ////create/////
 
 const createComment = async (req, res) => {
-    someCRUD.createObject(req, res, Comment);
+    getCRUD.createObject(req, res, Comment);
 };
 
 ////update/////

@@ -1,4 +1,4 @@
-const gertCRUD = require('../controllers/crudControllers')
+const getCRUD = require('../controllers/crudControllers')
 const { Teams } = require('../models')
 
 
@@ -16,7 +16,7 @@ const updateTeam = async (req, res) => {
 
 /////// Delete //////
 const deleteTeam = async (req, res) => {
-    someCRUD.deleteObjectByID(req, res, Teams);
+    getCRUD.deleteObjectByID(req, res, Teams);
 };
 
 
