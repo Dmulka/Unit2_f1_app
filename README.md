@@ -4,7 +4,7 @@
 ---
 
 Everyting you need to know to follow top teams and drovers at a glance. 
-
+![landing](./client/imgs/landing.png)
 
 
 ## Project 

@@ -51,7 +51,7 @@ flex-direction: column;
 justify-content: left;
 align-items: center;
 justify-content: flex-start;
-margin: 50px;
+margin: 30px;
 }
 
 #team-btns, img {
@@ -67,7 +67,7 @@ margin: 50px;
     transform: translate( -50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     border-radius: 10px;
-    border:1px solid black;
+    border:1px solid rgb(247, 6, 6);
     background-color: white;
     z-index: 10;
     width: 500px;
@@ -109,7 +109,7 @@ margin: 50px;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.541);
+    background-color: rgba(251, 251, 251, 0.117);
     pointer-events: none;
 }
 
